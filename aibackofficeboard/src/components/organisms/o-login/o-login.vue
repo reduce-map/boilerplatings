@@ -67,8 +67,8 @@ export default {
     },
     data: () => ({
         isLoading: false,
-        email: 'admin@grabme.de',
-        password: 'password1234',
+        email: '',
+        password: '',
         counter: 0, // delete
     }),
     computed: {
