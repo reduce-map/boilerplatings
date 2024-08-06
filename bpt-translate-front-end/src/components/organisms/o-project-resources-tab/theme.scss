@@ -1,0 +1,39 @@
+@import '@design';
+
+.o-project-resources-tab {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.controls-row {
+    margin-bottom: 4px;
+
+    &.columns {
+        display: flex;
+
+        .column {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &.search {
+        position: relative;
+
+        .spin {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            z-index: 1;
+        }
+    }
+}

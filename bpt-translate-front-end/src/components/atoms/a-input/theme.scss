@@ -1,0 +1,23 @@
+.a-input {
+    width: 100%;
+
+    .error {
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        color: #f03636;
+        text-align: left;
+        text-transform: lowercase;
+    }
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.red {
+    color: #f03636;
+}

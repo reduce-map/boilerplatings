@@ -1,0 +1,17 @@
+@import '@design';
+
+.o-register {
+    @include content-center();
+
+    height: 100vh;
+}
+
+.holder {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-register {
+    padding: 4px 0;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+@import '@design';
+
+.o-project-statistics {
+    width: 100%;
+}
+
+.task-statistic-list {
+    display: flex;
+
+    li {
+        width: 200px;
+        margin: 0 10px 10px 0;
+    }
+}
