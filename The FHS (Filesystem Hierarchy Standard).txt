@@ -1,0 +1,24 @@
+The FHS (Filesystem Hierarchy Standard) defines the purpose of each of those directories and what should go where. Heres a general breakdown from my understanding of the subject:
+
+/etc: Contains text files to configure the system.
+/bin: Contains just those executables needed to boot the system and mount /usr.
+/sbin: Same as above except these are only meant for use by the administrator (root).
+/lib: Libraries need by the executables in /bin and /sbin as well as kernel modules.
+/dev: Files representing all the devices attached to the system (or that could be attached).
+/tmp: Temporary files.
+/root: The root user's home directory. Not in /home because root might need to login even if /home is not mountable.
+/home: Home directories for all the users.
+/mnt: Usually for mounting removable drives (floppy, cdrom) or other disks.
+/proc: Files provided by the kernel for information and configuration of the system
+/sys: New in 2.6. Information about the devices connected to the system?
+/boot: Kernels and related files for booting linux.
+
+/usr and /usr/local contain the rest of the system (applications and related files) and have a hierarchy as follows:
+bin:
+sbin:
+lib: Same as above, but these files aren't require for booting the system.
+share: FHS defines it as Architecture-independent data. Basically data (like images, sounds, etc) and documentation by apps installed on the system.
+include: Headers used for developing software with the libraries in lib.
+X11: The X Windowing System (eg. Xfree86) has its own hierachy of libaries, executable, and such here, similar to /usr.
+
+/usr is generally maintained by the package management system (rpm, apt, portage), whereas, /usr/local is where you would keep things you install manually (./configure;make;make install).
