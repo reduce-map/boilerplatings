@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './colors.scss';
+@import './animations.scss';
+
+// ---------------------------------------------------------------
+// That file contains global styles, which are used across the app
+// ---------------------------------------------------------------
+body {
+  font: 18px / 1.6 'Montserrat', Tahoma, 'Trebuchet MS', sans-serif;
+  color: var(--vichit-black);
+}
+body,
+html {
+  min-width: 350px;
+  background: var(--vichit-purple-dark);
+  overflow-x: hidden; // cut off burger menu
+}
+a,
+button {
+  outline: none;
+  user-select: none;
+}
+
+// --------------------------------------
+// global classes begin with 'app' prefix
+// --------------------------------------
+.app-page-indent {
+  padding-top: var(--app-header-height);
+}
+.app-page-wrapper {
+  max-width: 1280px; // TODO remove that on the second iteration
+  @apply mx-auto w-full px-6 sm:px-10 lg:px-20;
+}
+.app-svg-holder svg {
+  @apply w-8 h-8;
+}
+.app-svg-holder-l svg {
+  @apply w-10 h-10;
+}
+.app-lang-nl {
+  word-break: break-word;
+}
+.app-selection-default {
+  *::-moz-selection {
+    background-color: var(--vichit-blue);
+    color: var(--white);
+  }
+  *::selection {
+    background-color: var(--vichit-blue);
+    color: var(--white);
+  }
+}
+.app-selection-purple {
+  *::-moz-selection {
+    background-color: var(--vichit-purple);
+    color: var(--white);
+  }
+  *::selection {
+    background-color: var(--vichit-purple);
+    color: var(--white);
+  }
+}
+
+.app-list {
+  @apply list-disc pl-5;
+
+  strong {
+    @apply font-semibold;
+  }
+}
+
+// TODO move to policy page?
+.app-policy-page {
+  h1 {
+    @apply text-3xl font-bold py-4 font-bold;
+    color: var(--vichit-blue);
+  }
+
+  h2 {
+    @apply text-2xl font-bold py-2 font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  //li {
+  //  @apply relative ml-4 pl-2;
+  //  @apply before:content-['•'] before:absolute before:text-xs before:-left-2 before:top-4 before:-translate-y-1/2;
+  //}
+}
+
+mark {
+  // https://www.simform.com/services/custom-software-development/ why why why
+  background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 8%;
+  background-position: 0 100%;
+}
+
+h1 mark,
+h2 mark,
+h3 mark,
+h4 mark,
+h5 mark,
+h6 mark {
+  background-size: 100% 13%;
+}

@@ -1,0 +1,13 @@
+services:
+  telegram-pr-notifier:
+    build: .
+    image: telegram-pr-notifier:${DOCKER_TARGET:-production}
+    networks:
+      - project-network
+    volumes:
+      - ./.env:/usr/src/app/.env
+      - ./reviewMessagesEnabled.json:/usr/src/app/reviewMessagesEnabled.json
+
+networks:
+  project-network:
+    external: true

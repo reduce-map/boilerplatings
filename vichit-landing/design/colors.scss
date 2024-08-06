@@ -1,0 +1,134 @@
+:root {
+  // DEFAULT COLORS
+  --white: #fff;
+  --black: #000;
+
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+
+  // BRAND COLORS
+  --vichit-purple: #643066;
+  --vichit-purple-rgb: 100, 48, 102;
+
+  --vichit-blue: #6868ac;
+  --vichit-blue-rgb: 104, 104, 172;
+
+  --vichit-coral: #e99276;
+  --vichit-coral-rgb: 233, 146, 118;
+
+  --velvet-violet: #db6f91;
+  --velvet-violet-rgb: 219, 111, 145;
+
+  --velvet-pink: #ffc0cb;
+  --velvet-pink-rgb: 255, 192, 203;
+
+  --vichit-green: #678c66;
+  --vichit-green-rgb: 103, 140, 102;
+
+  --vichit-grey: #1e1e1e;
+  --vichit-grey-rgb: 30, 30, 30;
+
+  --vichit-black: #111;
+  --vichit-black-rgb: 17, 17, 17;
+
+  --vichit-golden-tainoi: #ffc849;
+  --vichit-golden-tainoi-rgb: 255, 200, 73;
+
+  --vichit-orange-harley: #e10c6c;
+  --vichit-orange-harley-rgb: 202, 52, 34;
+
+  --vichit-orange-neon: #e10c6c;
+  --vichit-orange-neon-rgb: 202, 52, 34;
+
+  --vichit-pewter: #879f84;
+  --vichit-pewter-rgb: 135, 159, 132;
+
+  --vichit-blue-marguerite: #655fb7;
+  --vichit-blue-marguerite-rgb: 101, 95, 183;
+
+  --vichit-snow: #fffafa;
+  --vichit-snow-rgb: 255, 250, 250;
+
+  --vichit-lavender-blush: #ffeffd;
+  --vichit-lavender-blush-rgb: 255, 239, 253;
+
+  // TODO fix color variable reassignment
+  //--vichit-grey: #f9f9fb;
+  //--vichit-grey-rgb: 249, 249, 251;
+  // additional background colors
+  --vichit-bg-givry: #f7d6c7;
+  --vichit-bg-givry-rgb: 247, 214, 199;
+
+  --vichit-bg-gossamer-pink: #fac8c3;
+  --vichit-bg-gossamer-pink-rgb: 250, 200, 195;
+
+  --vichit-bg-goldenrod: #ffd678;
+  --vichit-bg-goldenrod-rgb: 255, 214, 120;
+
+  --vichit-bg-crystal-cut: #f8f4ec;
+  --vichit-bg-crystal-cut-rgb: 248, 244, 236;
+
+  --vichit-purple-dark: #13031f;
+  --vichit-purple-dark-rgb: 19, 3, 31;
+  // END BRAND COLORS
+
+  --light-blue: #135cfd;
+  --light-green: #3cedb7;
+
+  // gradients
+  //--blue-gradient: radial-gradient(ellipse at bottom, rbga(var(--vichit-purple-rgb), 0.5) 0%, rbga(var(--velvet-violet-rgb), 0.5) 100%);
+  //--blue-gradient: linear-gradient(to right top, #643066, #8d507c, #b57394, #db98ae, #ffc0cb);;
+  //https://mycolor.space/gradient3
+  --blue-gradient: radial-gradient(
+    ellipse at bottom,
+    #643066 0%,
+    #8d507c 20%,
+    #b57394 50%,
+    #db98ae 80%,
+    #ffc0cb 100%
+  );
+
+  // COMPONENTS
+  --component-contact-color: var(--vichit-black);
+  --component-contact-border-color: #fff;
+  --component-header-background: #fff;
+  --link-color: var(--vichit-black);
+
+  // Accordion
+  --component-accordion-bg-header: #fff;
+  --component-accordion-bg-body: #fff;
+
+  // utils
+  //--z-index-999: 999;
+  --highlight-background-opacity: 0.85;
+  --app-header-height: 80px;
+}
+
+// TODO refactor this is loading background
+// TODO https://colorhunt.co/palette/f9d371f47340ef2f888843f2
+.bg-blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.app-text-velvet-violet {
+  color: var(--velvet-violet);
+}
+
+.app-text-vichit-blue {
+  color: var(--vichit-blue);
+}
+
+.app-bg-vichit-purple {
+  background-color: var(--vichit-purple);
+}
+
+.app-shadow-purple {
+  box-shadow: 0 5px 25px 0 rgb(var(--vichit-purple-rgb));
+}
+.app-shadow-black {
+  box-shadow: 0 2px 21px 0 rgb(0 0 0 / 10%);
+}
+
+.app-text-white {
+  color: var(--white);
+}
