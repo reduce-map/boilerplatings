@@ -1,0 +1,70 @@
+{
+  "name": "@team/account-contract",
+  "version": "1.0.9",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "npm run build && mocha --reporter dot",
+    "test:seePassed": "npm run build && mocha",
+    "test:inspect": "npm run build && mocha --inspect-brk",
+    "start:dev": "npx nodemon",
+    "build": "tsc --build",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@automapper/classes": "^8.7.7",
+    "@automapper/core": "^8.7.7",
+    "@types/axios": "^0.14.0",
+    "@types/bunyan": "^1.8.8",
+    "@types/bunyan-format": "^0.2.5",
+    "@types/cheerio": "^0.22.32",
+    "@types/steam-user": "^4.26.4",
+    "axios": "^1.5.0",
+    "bunyan": "^1.8.15",
+    "bunyan-format": "^0.2.1",
+    "bunyan-rotating-file-stream": "^2.0.5",
+    "cheerio": "^1.0.0-rc.12",
+    "cherio": "^1.0.0-rc.2",
+    "guid-ts": "^1.1.2",
+    "inversify": "^6.0.1",
+    "module-alias": "^2.2.3",
+    "reflect-metadata": "^0.1.13",
+    "steam-totp": "^2.1.2",
+    "steam-user": "^4.29.1",
+    "steamcommunity": "^3.46.1",
+    "steamid": "^2.0.0",
+    "ts-log": "^2.2.5",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.7",
+    "@types/sinon": "^10.0.15",
+    "@types/steam-totp": "^2.1.0",
+    "@types/steamcommunity": "^3.43.2",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "sinon": "^15.2.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "browser": {
+    "crypto": false,
+    "guid-ts": false
+  },
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "_moduleAliases": {
+    "@team/polydata": "../../polyData/build"
+  }
+}
