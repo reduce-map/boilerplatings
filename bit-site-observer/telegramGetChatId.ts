@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const TELEGRAM_BOT_TOKEN = '6810782390:AAH_IuGi4msBOqDCiTISv3fmLVD5TbkbEck';
+const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN';
 
 async function getChatId() {
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates`;
