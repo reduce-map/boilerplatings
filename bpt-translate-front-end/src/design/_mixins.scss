@@ -1,0 +1,51 @@
+@mixin content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin block {
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin center-space-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin button-blue {
+    box-sizing: border-box;
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    background: #5780f7;
+    border: 1px solid #5780f7;
+    border-radius: 6px;
+
+    i,
+    span {
+        vertical-align: middle;
+    }
+
+    i {
+        font-size: 18px;
+    }
+}
+
+@mixin button-red {
+    @include button-blue();
+
+    background: #aa0e37;
+    border-color: #aa0e37;
+}
+
+@mixin row {
+    padding: 12px 0;
+    margin-bottom: 7px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+}

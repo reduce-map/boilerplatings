@@ -1,0 +1,13 @@
+@import '@design';
+
+.p-verify {
+    width: 100%;
+    background: #f4f5f7;
+}
+
+.register-error-params {
+    height: 100vh;
+    text-align: center;
+
+    @include content-center();
+}

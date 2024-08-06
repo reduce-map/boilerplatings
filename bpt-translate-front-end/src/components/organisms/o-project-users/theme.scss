@@ -1,0 +1,49 @@
+@import '@design';
+
+.o-project-users {
+    width: 100%;
+}
+
+.name {
+    width: 20%;
+}
+
+.email {
+    width: 20%;
+}
+
+.status {
+    width: 15%;
+}
+
+.role {
+    width: 15%;
+}
+
+.lang {
+    width: 20%;
+}
+
+.actions {
+    width: 10%;
+}
+
+.icon-confirmation {
+    font-size: 20px;
+}
+
+.resent-invitation {
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.status-holder {
+    display: flex;
+    align-items: center;
+}
+
+.columns-holder {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,27 @@
+@import '@design';
+
+.a-modal-confirmation {
+    width: 100%;
+}
+
+.btn-holder {
+    display: flex;
+}
+
+.btn-modal {
+    width: auto;
+    min-width: 88px;
+    padding: 7px 12px;
+    margin: 0 5px;
+}
+
+.btn-decline {
+    color: #5780f7;
+}
+
+.holder {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}

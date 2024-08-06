@@ -1,0 +1,21 @@
+1.*General Summary
+2.*Experience in professional area/Technology
+3.*Candidate level according Edvantis levels
+4.*Hire/Not Hire
+5.*Candidate expectations
+6.*Gaps
+7.*Strong sides
+8.*Personal impression
+9.Recommendation for candidate after interview
+10.Additional information
+11.* Overall Recommendation:
+Hired
+On-Hold
+Strong Hire
+Shortlist
+Wait-list
+Move to next round
+Reject
+Strong Reject
+
+12. Overall Comments

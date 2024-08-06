@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api for course ",
+  "main": "index.js",
+  "author": "me",
+  "license": "MIT",
+  "scripts": {
+    "run": "json-server db.json --routes routes.json"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0"
+  }
+}

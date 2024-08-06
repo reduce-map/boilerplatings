@@ -1,0 +1,30 @@
+@import '@design';
+
+.a-modal {
+    width: 100%;
+}
+
+.modal-holder {
+    position: relative;
+    padding: 21px 30px 20px;
+
+    .btn-close {
+        position: absolute;
+        top: 21px;
+        right: 16px;
+        font-size: 18px;
+        color: #94989a;
+        cursor: pointer;
+    }
+
+    ::v-deep {
+        h2 {
+            padding-right: 30px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}

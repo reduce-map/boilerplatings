@@ -1,0 +1,23 @@
+@import '@design';
+
+.m-progress-list {
+    width: 100%;
+}
+
+.list {
+    display: flex;
+}
+
+ul li {
+    margin-top: 16px;
+}
+ul li ul li {
+    margin-top: 8px;
+}
+ul li span {
+    width: 130px;
+}
+ul li ul li span {
+    width: 200px;
+    padding-left: 120px;
+}

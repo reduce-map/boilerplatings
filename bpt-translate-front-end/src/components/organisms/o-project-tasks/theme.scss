@@ -1,0 +1,40 @@
+@import '@design';
+
+.o-project-tasks {
+    width: 100%;
+}
+
+.task-container {
+    display: flex;
+
+    .title-card {
+        padding: 8px 0 8px 8px;
+        background-color: #f7f3f3;
+    }
+
+    > div {
+        flex-grow: 1;
+        align-self: baseline;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #f7f3f3;
+        border-radius: 4px;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+        transition: all 0.3s ease-in-out;
+
+        .list {
+            padding-left: 8px;
+            cursor: move;
+            border-top: 1px solid #f7f3f3;
+        }
+    }
+
+    > div:not(:last-child) {
+        margin-right: 1%;
+    }
+}
+.resources-viewer {
+    height: 200px;
+    padding: 4px;
+    border: 1px solid #eee;
+}

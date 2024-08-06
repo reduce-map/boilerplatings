@@ -1,0 +1,11 @@
+@import '@design';
+
+.t-owner {
+    display: flex;
+}
+
+.main {
+    height: calc(100vh - 72px);
+    padding: 5px 20px;
+    overflow: auto; // set main scroll attribute
+}

@@ -1,0 +1,120 @@
+https://bit.dev/reference/homepage/
+
+https://flowbite.com/docs/getting-started/remix/ 
+
+https://flowbite-react.com/docs/components/datepicker
+
+https://github.com/sergiodxa
+
+https://www.netlify.com/blog/how-to-use-tailwind-css-with-remix/m
+
+https://ui.shadcn.com/themes !!
+
+https://github.com/sergiodxa/remix-auth 
+
+
+https://github.com/sergiodxa/remix-utils ?
+
+https://github.com/FrontendMasters/remix-fundamentals !!
+
+https://github.com/FrontendMasters/advanced-remix !! 
+
+https://github.com/remix-run/examples
+
+https://github.com/airjp73/remix-validated-form
+
+https://github.com/kentcdodds/advanced-remix
+
+https://github.com/vendure-ecommerce/storefront-remix-starter
+
+https://github.com/bradtraversy/remix-blog
+
+https://github.com/remix-run/remix-website
+
+https://github.com/m5r/awesome-remix !!! 
+
+
+https://github.com/edmundhung/remix-cloudflare-template !!!! 
+
+https://github.com/Shopify/hydrogen ?
+
+oxygen ?
+
+
+https://github.com/sergiodxa/remix-auth-strategy-template
+
+https://github.com/sergiodxa/remix-auth-oauth2
+
+https://github.com/clintonwoo/hackernews-remix-react
+
+
+https://github.com/edmundhung/remix-guide
+https://github.com/sergiodxa/remix-i18next
+https://github.com/seasonedcc/remix-forms
+https://github.com/remix-pwa/remix-pwa
+https://github.com/Code-Forge-Net/Remix-Dev-Tools
+https://github.com/Josh-McFarlin/remix-image ?
+
+https://github.com/kiliman/remix-typedjson ??
+
+https://github.com/remix-run/example-trellix
+https://github.com/jacob-ebey/remix-cloudflare-demo
+https://github.com/kiliman/remix-flat-routes ?
+https://github.com/yesmeck/remix-routes
+https://github.com/rtkg12/remixr
+https://github.com/one-aalam/remix-starter-kit
+https://github.com/netlify-templates/kpop-stack
+https://github.com/itsMapleLeaf/remix-electron
+
+https://github.com/mcansh/remix-fastify ?
+
+https://github.com/AlexandroMtzG/remix-blocks
+
+
+https://github.com/kentcdodds/remix-todomvc
+
+https://makerkit.dev/blocks
+
+
+https://github.com/balavishnuvj/remix-seo !!!!
+
+https://headlessui.com/ 
+
+https://github.com/kiliman/remix-vite-template 
+
+https://github.com/alvin0216/remix-ssr-blog
+
+https://github.com/payloadcms/remix-server
+
+https://github.com/radix-ui/themes ?!
+
+https://github.com/nasa-gcn/gcn.nasa.gov - !? example nasa
+
++ Telegram Bot
+
+
+https://github.com/karandon24/Nana-Remix
+
++
+
+https://github.com/mikemajesty/nestjs-monorepo
+
+===
+
+search 
+
+https://github.com/search?q=remix+monorepo+&type=repositories&s=stars&o=desc
+
+
+
+
+===
+
+findings
+
+- https://martinfowler.com/bliki/StranglerFigApplication.html
+
+	- https://twitter.com/DavidKPiano/status/1546139706580238342
+
+
+ https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig

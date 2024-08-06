@@ -1,0 +1,33 @@
+{
+  "sidebar": [
+    {
+      "text": "Setup and development",
+      "collapsible": true,
+      "children": [
+        "/App.md",
+        "/README.md",
+        "/architecture.md",
+        "/designsystem.md",
+        "/development.md",
+        "/editors.md",
+        "/linting.md",
+        "/production.md",
+        "/routing.md",
+        "/state.md",
+        "/tech.md",
+        "/tests.md",
+        "/troubleshooting.md"
+      ]
+    },
+    {
+      "text": "Components",
+      "collapsible": true,
+      "children": [
+        "/components/large-data-set-example/LargeDataSetExample.md",
+        "/components/rich-grid-example/DateComponent.md",
+        "/components/rich-grid-example/HeaderGroupComponent.md",
+        "/components/rich-grid-example/RichGridExample.md"
+      ]
+    }
+  ]
+}

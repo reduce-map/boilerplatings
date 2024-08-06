@@ -1,0 +1,103 @@
+.o-devices-grid {
+    width: 100%;
+}
+
+.grid {
+    margin-left: 10px;
+}
+
+.holder {
+    display: flex;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.grid-control {
+    margin-left: 20px;
+}
+
+.number {
+    width: 15%;
+}
+
+.weight {
+    width: 20%;
+}
+.camera {
+    width: 25%;
+}
+
+.amount {
+    width: 20%;
+}
+
+.actions {
+    width: 20%;
+}
+
+.grid-header,
+.grid-row {
+    display: flex;
+
+    > div {
+        &:first-child {
+            padding-left: 21px;
+        }
+    }
+}
+
+.grid-header {
+    padding: 9px 0 7px;
+    font-size: 12px;
+    color: #7b7b7b;
+    background: #202020;
+    border-radius: 5px;
+}
+
+.grid-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    color: #fff;
+    background: #141414;
+
+    &:nth-child(2n) {
+        background: #1c1c1c;
+    }
+
+    .customer-id {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    .number {
+        color: #ff00f5;
+    }
+
+    &.selected {
+        background: linear-gradient(
+            270deg,
+            #78ffae -54.4%,
+            rgba(54, 115, 79, 0.3) 26.82%,
+            #78ffae 126.92%
+        );
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.grid-content {
+    border-radius: 5px;
+}
+
+.btn-action {
+    margin-left: 15px;
+
+    &:first-child {
+        margin: 0;
+    }
+}

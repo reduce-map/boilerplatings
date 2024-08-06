@@ -1,0 +1,40 @@
+@import '@design';
+
+.o-project-resources-viewer {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+}
+
+.infinite-wrapper {
+    width: 261px;
+    height: 455px;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+li {
+    height: 250px;
+}
+
+.resources-checkbox {
+    display: block;
+    padding: 0 0 0 5px;
+}
+.resource-holder {
+    padding: 4px;
+    cursor: pointer;
+    background: #eee;
+    border-bottom: 1px solid #000;
+    &:hover {
+        background: #73a6ae;
+    }
+
+    &.active {
+        background: #b9b9b9;
+    }
+}
+
+.app-row {
+    margin-bottom: 10px;
+}

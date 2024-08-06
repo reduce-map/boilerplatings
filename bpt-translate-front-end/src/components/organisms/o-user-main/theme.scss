@@ -1,0 +1,71 @@
+@import '@design';
+
+.o-user-main {
+    width: 100%;
+    padding: 20px;
+}
+
+.projects-table {
+    .name {
+        width: 70%;
+    }
+
+    .role {
+        width: 20%;
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.img-project-logo {
+    display: block;
+    width: auto;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.project-add {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+
+    .title {
+        min-height: 28px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        img {
+            transition: 1s;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.project-add-card {
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-project {
+    @include content-center();
+
+    .add-project-icon {
+        display: block;
+        margin-top: -30px;
+        font-size: 120px;
+        color: #28a745;
+    }
+}

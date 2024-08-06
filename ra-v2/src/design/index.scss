@@ -1,0 +1,63 @@
+// /* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+* {
+    font-family: 'Monaco, Menlo, Consolas';
+    font-size: 16px;
+}
+.microsoft-input::v-deep {
+    .el-input__inner {
+      border: 1px solid rgb(96, 94, 92);
+      border-radius: 2px;
+      background: rgb(255, 255, 255);
+      &:focus {
+        border: 1px solid rgb(0, 120, 212);
+      }
+    }
+  }
+  .microsoft-btn {
+    border: 1px solid rgb(0, 120, 212);
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: rgb(0, 120, 212);
+    color: rgb(255, 255, 255);
+  
+    &:focus {
+      border: 1px solid rgb(0, 120, 212);
+      padding: 0px 16px;
+      border-radius: 2px;
+      min-width: 80px;
+      height: 32px;
+      background-color: rgb(0, 120, 212);
+      color: rgb(255, 255, 255);
+    }
+  
+    &:hover {
+      background-color: rgb(16, 110, 190);
+      border: 1px solid rgb(16, 110, 190);
+      color: rgb(255, 255, 255);
+    }
+  
+    &:active {
+      background-color: rgb(0, 90, 158);
+      border: 1px solid rgb(0, 90, 158);
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .microsoft-link {
+    color: rgb(0, 120, 212);
+    text-decoration: underline;
+    &:hover {
+        color: rgb(0, 69, 120);
+    }
+  }
+  
+  .el-collapse-item__header {
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 120, 212);
+  }

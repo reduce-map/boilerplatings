@@ -1,0 +1,17 @@
+.a-table-scroll {
+    width: 100%;
+}
+.scroll-area {
+    position: relative;
+    height: calc(100vh - 300px);
+    margin: auto;
+}
+
+.header {
+    margin-bottom: 6px;
+}
+
+.body {
+    overflow: hidden;
+    border-radius: 5px;
+}

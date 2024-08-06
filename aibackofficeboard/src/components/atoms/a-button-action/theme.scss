@@ -1,0 +1,51 @@
+.a-button-action {
+    display: inline-block;
+    cursor: pointer;
+
+    .holder {
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        overflow: hidden;
+
+        img {
+            vertical-align: top;
+        }
+
+        .active {
+            display: none;
+        }
+
+        .hover {
+            display: none;
+        }
+
+        &:hover {
+            .hover {
+                display: block;
+            }
+
+            .default {
+                display: none;
+            }
+
+            .active {
+                display: none;
+            }
+        }
+
+        &:active {
+            .active {
+                display: block;
+            }
+
+            .default {
+                display: none;
+            }
+
+            .hover {
+                display: none;
+            }
+        }
+    }
+}

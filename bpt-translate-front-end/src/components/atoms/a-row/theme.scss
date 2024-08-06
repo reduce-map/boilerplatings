@@ -1,0 +1,12 @@
+@import '@design';
+
+.a-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+
+    .label {
+        min-width: 150px;
+    }
+}

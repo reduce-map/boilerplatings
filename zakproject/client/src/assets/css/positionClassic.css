@@ -1,0 +1,130 @@
+body{
+    font-family: "Arial Narrow";
+}
+li{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+ul{
+    list-style: none;
+}
+header{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url("http://hq-oboi.ru/photo/cherno_belaya_abstrakciya_1920x1200.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    color: white;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+.logo{
+    flex: 1 1 auto;
+}
+.title{
+    font-size: 40px;
+}
+nav{
+    flex: 1 1 auto;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.wrapContent{
+    display: flex;
+    align-items: normal;
+    flex-wrap: wrap;
+}
+
+main{
+    margin: 2px;
+    flex: 3 ;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background: url("http://hq-wallpapers.ru/wallpapers/13/hq-wallpapers_ru_abstraction3d_62492_1680x1050.jpg") no-repeat;
+    background-size: 1500px 1500px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+    border: 1px outset ;
+    border-radius: 5px;
+}
+
+header, footer{
+    border: 1px outset ;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+}
+aside{
+    flex: 1 ;
+    background: url("https://i.ytimg.com/vi/a8VOhEQi0N4/maxresdefault.jpg")no-repeat;
+    background-size: 1500px 1500px;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+    border: 1px outset ;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+@media all and (max-width: 750px){
+    .logo{
+        text-align: center;
+    }
+}
+.tree{
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    background: url("../images/93.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+}
+
+ a:link {font-size:16px; color:DarkRed}
+ a:visited {font-size:16px; color:White}
+ a:hover {font-size:16px; color:crimson}
+
+.wh a:link {font-size:16px; color:DarkRed}
+.wh a:visited {font-size:16px; color:Tomato}
+.wh a:hover {font-size:16px; color:crimson}
+
+.mainArticle{
+    background: rgba(0, 0, 0, 0.61);
+    padding: 27px;
+    border: 1px outset ;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6)
+}
+.asideArticle{
+    background: rgba(0, 0, 0, 0.61);
+    padding: 5px;
+    border: 1px outset ;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6)
+}
+footer{
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 1));
+    color: white;
+}
+
+
+
+
+
+

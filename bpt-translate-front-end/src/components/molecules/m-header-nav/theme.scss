@@ -1,0 +1,49 @@
+@import '@design';
+
+.m-header-nav {
+    @include center-space-between();
+
+    flex: 1;
+    padding: 0 16px;
+}
+
+//.select-lang {
+//    width: 120px;
+//    margin: 0 32px;
+//
+//    ::v-deep {
+//        .ivu-select-selection {
+//            background: none;
+//        }
+//    }
+//}
+
+.header-nav {
+    @include content-center();
+
+    li {
+        margin-right: 20px;
+
+        &:hover {
+            border-color: #000;
+        }
+
+        a {
+            display: block;
+            padding: 6px 10px;
+            color: #000;
+            border-radius: 5px;
+
+            &:hover {
+                color: #000;
+                text-decoration: none;
+                background: rgba(190, 190, 190, 0.2);
+            }
+        }
+    }
+}
+
+.logout {
+    font-size: 20px;
+    cursor: pointer;
+}

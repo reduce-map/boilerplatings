@@ -1,0 +1,32 @@
+{
+  "name": "velo-moto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/milano",
+  "scripts": {
+    "drive": "node src/apiGoogleDrive/example.js"
+  },
+  "repository": "git+https://wr_t@bitbucket.org/wr_t/velo-moto.git",
+  "homepage": "https://bitbucket.org/wr_t/velo-moto#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "exceljs": "^3.5.0",
+    "fs-extra": "^8.1.0",
+    "ftp": "^0.3.10",
+    "googleapis": "^45.0.0",
+    "htmlparser2": "^4.0.0",
+    "image-download": "^1.3.0",
+    "image-downloader": "^3.5.0",
+    "jquery": "^3.4.1",
+    "json2xls": "^0.1.2",
+    "lodash": "^4.17.15",
+    "mime-types": "^2.1.25",
+    "moment": "^2.24.0",
+    "nightmare": "^3.0.2",
+    "pino": "^5.14.0",
+    "progress": "^2.0.3",
+    "request": "^2.88.0",
+    "vo": "^4.0.2"
+  }
+}

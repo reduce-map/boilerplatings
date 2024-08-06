@@ -1,0 +1,25 @@
+.a-button-status {
+    display: inline-block;
+    min-width: 75px;
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+    &.active,
+    &.accepted {
+        background: #89ee89;
+    }
+
+    &.refunded {
+        background: #69daf3;
+    }
+
+    &.inactive,
+    &.declined {
+        background: #f36969;
+    }
+}

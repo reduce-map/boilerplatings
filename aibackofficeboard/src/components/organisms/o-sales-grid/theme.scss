@@ -1,0 +1,147 @@
+@import '@design';
+
+.o-sales-grid {
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.grid-control {
+    margin-left: 20px;
+}
+
+.customer-id {
+    width: 10%;
+}
+.products {
+    width: 45%;
+}
+.date {
+    width: 17%;
+}
+
+.payment {
+    width: 9%;
+}
+
+.amount {
+    width: 10%;
+}
+
+.status {
+    width: 9%;
+}
+
+.grid-header,
+.grid-row {
+    display: flex;
+
+    > div {
+        &:first-child {
+            padding-left: 25px;
+        }
+    }
+}
+
+.grid-header {
+    padding: 9px 0 7px;
+    font-size: 12px;
+    color: #7b7b7b;
+    background: #202020;
+    border-radius: 5px;
+}
+
+.grid-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background: #141414;
+
+    &:nth-child(2n) {
+        background: #1c1c1c;
+    }
+
+    .customer-id {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    .payment,
+    .amount {
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+    }
+
+    .date-wrapper {
+        color: #7b7b7b;
+    }
+
+    .at {
+        color: #c4c4c4;
+    }
+
+    .time-wrapper {
+        color: #fff;
+    }
+
+    &.selected {
+        background: linear-gradient(
+            270deg,
+            #78ffae -54.4%,
+            rgba(54, 115, 79, 0.3) 26.82%,
+            #78ffae 126.92%
+        );
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.grid-content {
+    border-radius: 5px;
+}
+
+.button-product {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.v-popover {
+    display: inline-block;
+    cursor: pointer;
+
+    .popup-text {
+        position: relative;
+        display: inline-block;
+        width: 41px;
+        padding: 3px 0;
+        font-size: 14px;
+        color: #eaeaea;
+        text-align: center;
+        background: #545454;
+        border-radius: 360px;
+
+        .dots {
+            position: relative;
+            top: -4px;
+            display: inline-block;
+        }
+    }
+}
+
+.product-line {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+
+    .amount {
+        margin-left: 3px;
+        color: #7b7b7b;
+    }
+}

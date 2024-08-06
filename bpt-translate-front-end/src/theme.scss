@@ -1,0 +1,577 @@
+// ===
+// Design variables and utilities from src/design.
+// ===
+@import '@design';
+
+// ===
+// Vendor
+// ===
+// Style loading bar between pages.
+// https://github.com/rstacruz/nprogress
+@import '~nprogress/nprogress.css';
+@import '~view-design/dist/styles/iview.css';
+@import url('https://unicons.iconscout.com/release/v2.0.1/css/unicons.css');
+@import '~typeface-open-sans/index.css';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+    line-height: 1.4;
+    vertical-align: baseline;
+    border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// ===
+// Base element styles
+// ===
+html {
+    height: 100vh;
+}
+
+body {
+    min-width: $screen-min-width;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fz-m;
+    line-height: 1.3;
+    color: $color-main;
+    background: $color-body-bg;
+}
+
+a {
+    color: $color-link;
+    transition: $duration-animation-base;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: $fz-h1;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: $fz-h2;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: 16px;
+    font-size: $fz-h3;
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+// stylelint-disable no-descending-specificity
+.app-side-nav {
+    a {
+        display: block;
+        padding: 10px 15px;
+        color: #000;
+    }
+
+    li {
+        position: relative;
+        &:hover {
+            background: #d8d6d6;
+            //i,
+            //a {
+            //    color: #d8d6d6;
+            //}
+        }
+    }
+
+    .router-link-exact-active {
+        color: #161616;
+        background: #d8d6d6;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            content: '';
+            background: #d8d6d6;
+            border-radius: 2px;
+        }
+    }
+}
+
+.app-heading {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+
+    @include center-space-between();
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.app-table {
+    .app-col {
+        width: 15%;
+
+        .holder {
+            padding-left: 20px;
+        }
+    }
+
+    .actions {
+        width: 10%;
+        i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .edit {
+            color: #6fa9ff;
+        }
+
+        .delete {
+            color: red;
+        }
+        .confirm {
+            color: green;
+        }
+
+        .related {
+            color: #94989a;
+        }
+    }
+}
+
+.app-form-holder {
+    padding: 4px 0;
+    //border: solid #eee;
+    //border-width: 1px 0;
+
+    .app-row {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.app-divider-block {
+    .heading {
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #767676;
+        text-align: center;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            content: '';
+            background: #000;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #fff;
+    }
+
+    .divider-btn {
+        display: block;
+        width: 100%;
+    }
+}
+
+.app-alert {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+
+    p {
+        margin-bottom: 6px;
+    }
+}
+
+.app-side-bar {
+    flex: 0 0 300px;
+}
+
+.app-row-form {
+    width: 500px;
+}
+
+.app-label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.app-confirmed {
+    color: green;
+}
+
+.app-not-confirmed {
+    color: grey;
+}
+
+.app-error {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    color: #f03636;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.v--modal-overlay {
+    .modal-holder {
+        //max-height: 80vh;
+    }
+}
+
+// ===
+// Vendor
+// ===
+
+//#nprogress .bar {
+//background: $color-link-text;
+//}
+//
+//.ivu-input-wrapper {
+//    .ivu-input {
+//        height: auto;
+//        padding: 8px 16px;
+//        font-size: 13px;
+//        font-weight: 500;
+//        line-height: $line-height-l;
+//        color: $color-black;
+//        border: 1px solid $color-white;
+//        border-radius: 4px;
+//        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+//
+//        &::placeholder {
+//            /* Chrome, Firefox, Opera, Safari 10.1+ */
+//            color: #797e81;
+//            opacity: 0.8;
+//        }
+//    }
+//
+//    &.has-errors {
+//        .ivu-input {
+//            border-color: #f03636;
+//        }
+//    }
+//
+//    .ivu-icon {
+//        padding: 2px 0 0;
+//        vertical-align: middle;
+//    }
+//}
+//
+//.ivu-checkbox-wrapper {
+//    font-size: 14px;
+//    line-height: 24px;
+//    color: #93979a;
+//
+//    .ivu-checkbox-inner {
+//        width: 20px;
+//        height: 20px;
+//        border-color: #93979a;
+//        border-radius: 2px;
+//
+//        &::after {
+//            top: 2px;
+//            left: 6px;
+//            width: 7px;
+//            height: 10px;
+//        }
+//    }
+//
+//    .ivu-checkbox-checked {
+//        .ivu-checkbox-inner {
+//            background: none;
+//            border-color: #bb3e5f;
+//            &::after {
+//                color: #bb3e5f;
+//                background: none;
+//                border-color: #bb3e5f;
+//            }
+//        }
+//    }
+//}
+//
+//.avatar-upload.ivu-upload {
+//    .ivu-upload-drag {
+//        margin: 0 auto;
+//        background: none;
+//        border: none;
+//    }
+//}
+//
+//.multiselect {
+//    .multiselect__tags {
+//        border: none;
+//    }
+//}
+//
+//.flatpickr-calendar.inline {
+//    width: 100%;
+//    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07) !important;
+//}
+//
+//// iview
+//// select small size (header lang select example)
+//.select-s {
+//    .ivu-select-arrow.ivu-icon {
+//        display: none;
+//    }
+//
+//    .ivu-select-selection {
+//        border: none;
+//    }
+//}
+//
+//// custom global styles for select lang header component
+//.ivu-select {
+//    .ivu-select-selection {
+//        border: none;
+//    }
+//}
+//
+//// custom global styles from dropdown iview
+//.ivu-select-dropdown {
+//    .ivu-dropdown-item {
+//        &:not(.ivu-dropdown-item-disabled) {
+//            &:hover {
+//                color: #5780f7;
+//            }
+//        }
+//    }
+//}
+//
+//.select-lang {
+//    .ivu-select {
+//        width: 70px !important;
+//    }
+//
+//    .ivu-select-selected-value {
+//        width: 100% !important;
+//        padding: 0 10px !important;
+//    }
+//
+//    .ivu-select-selection > div,
+//    .ivu-select-selection,
+//    .ivu-select,
+//    .select-s {
+//        height: 70px;
+//    }
+//
+//    .ivu-select-selection > div {
+//        display: flex;
+//        align-items: center;
+//        text-align: center;
+//    }
+//}
+//
+//// flatpickr calendar
+//#app {
+//    .flatpickr-input {
+//        display: none;
+//    }
+//
+//    .flatpickr-calendar {
+//        .flatpickr-months {
+//            .flatpickr-month {
+//                height: 40px;
+//            }
+//
+//            .flatpickr-prev-month,
+//            .flatpickr-next-month {
+//                height: 40px;
+//                padding: 12px;
+//            }
+//        }
+//
+//        .flatpickr-current-month {
+//            padding-top: 7px;
+//        }
+//    }
+//
+//    .flatpickr-day {
+//        &.selected,
+//        &.startRange,
+//        &.endRange,
+//        &.selected.inRange,
+//        &.endRange.inRange,
+//        &.selected:focus,
+//        &.startRange:focus,
+//        &.endRange:focus,
+//        &.selected:hover,
+//        &.startRange:hover,
+//        &.endRange:hover,
+//        &.selected.prevMonthDay,
+//        &.startRange.prevMonthDay,
+//        &.endRange.prevMonthDay,
+//        &.selected.nextMonthDay,
+//        &.startRange.nextMonthDay,
+//        &.endRange.nextMonthDay {
+//            background: #aa0e37;
+//            border-color: #aa0e37;
+//        }
+//    }
+//}
+//
+//.v--modal-overlay .v--modal-box {
+//    height: auto !important;
+//}

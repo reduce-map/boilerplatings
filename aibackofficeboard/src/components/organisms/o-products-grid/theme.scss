@@ -1,0 +1,150 @@
+@import '@design';
+
+.o-products-grid {
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.grid-control {
+    margin-left: 20px;
+}
+
+.image {
+    width: 7%;
+}
+.product {
+    width: 18%;
+}
+
+.weight {
+    width: 9%;
+}
+
+.allergens {
+    width: 17%;
+}
+
+.stock {
+    width: 10%;
+}
+
+.category {
+    width: 13%;
+}
+
+.purchase {
+    width: 10%;
+}
+
+.sale {
+    width: 8%;
+}
+
+.actions {
+    width: 8%;
+}
+
+.grid-header,
+.grid-row {
+    display: flex;
+
+    > div {
+        &:first-child {
+            padding-left: 25px;
+        }
+    }
+}
+
+.grid-header {
+    padding: 9px 0 7px;
+    font-size: 12px;
+    color: #7b7b7b;
+    background: #202020;
+    border-radius: 5px;
+}
+
+.grid-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    background: #141414;
+
+    &:nth-child(2n) {
+        background: #1c1c1c;
+    }
+
+    &.selected {
+        background: linear-gradient(
+            270deg,
+            #78ffae -54.4%,
+            rgba(54, 115, 79, 0.3) 26.82%,
+            #78ffae 126.92%
+        );
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.allergens-type {
+    color: #ff00f5;
+}
+
+.grid-content {
+    border-radius: 5px;
+}
+
+.button-product {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.v-popover {
+    display: inline-block;
+    cursor: pointer;
+
+    .popup-text {
+        position: relative;
+        display: inline-block;
+        width: 41px;
+        padding: 3px 0;
+        font-size: 14px;
+        color: #eaeaea;
+        text-align: center;
+        background: #545454;
+        border-radius: 360px;
+
+        .dots {
+            position: relative;
+            top: -4px;
+            display: inline-block;
+        }
+    }
+}
+
+.product-line {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+
+    .amount {
+        margin-left: 3px;
+        color: #7b7b7b;
+    }
+}
+
+.btn-action {
+    margin-left: 10px;
+
+    &:first-child {
+        margin: 0;
+    }
+}

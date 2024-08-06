@@ -1,0 +1,35 @@
+{
+  "name": "bit-site-observer",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "prepare": "husky",
+    "format": "prettier --write \"*.{js,ts,vue}\"",
+    "precommit": "npm-run-all --parallel type-check format",
+    "prepush": "npm-run-all --parallel type-check format",
+    "type-check": "bunx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
+    "@types/lodash": "^4.17.5",
+    "@types/luxon": "^3.4.2",
+    "@types/node-cron": "^3.0.11",
+    "husky": "^9.0.11",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "async": "^3.2.5",
+    "axios": "^1.7.2",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.4",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^22.10.0"
+  }
+}

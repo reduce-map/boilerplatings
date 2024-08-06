@@ -1,0 +1,12 @@
+@import '@design';
+
+.o-password-forgot {
+    @include content-center();
+
+    height: 100vh;
+}
+
+.holder {
+    width: 500px;
+    margin: 0 auto;
+}

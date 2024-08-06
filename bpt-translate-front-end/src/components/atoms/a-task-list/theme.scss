@@ -1,0 +1,13 @@
+@import '@design';
+
+.a-task-list {
+    padding: 8px 0;
+
+    .title {
+        font-weight: 700;
+    }
+
+    i {
+        cursor: pointer;
+    }
+}
