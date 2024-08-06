@@ -1,0 +1,22 @@
+{
+  ".": {
+    "data": {
+      "type": "test-logs",
+      "data": [
+        {
+          "date": "2019-07-01T12:00:00Z",
+          "eventLogs": [
+            {
+              "id": 1,
+              "name": "AK-47 | Redline (Field-Tested)",
+              "type": "LIST_ITEM_ON_SALE",
+              "amount": "$7,600.00 USD",
+              "details": "Выставлен на продажу.",
+              "additionalInfo": "Причина List item on sale - Пользователь выставил предмет на продажу"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

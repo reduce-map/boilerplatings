@@ -1,0 +1,58 @@
+{
+    ".": {
+        "data": {
+            "type": "retail",
+            "source": "cash",
+            "data": [
+                {
+                    "enabled": true,
+                    "base": "USD",
+                    "quote": "UAH",
+                    "buy": 40.55,
+                    "sell": 41.111,
+                    "updatedAt": "2024-06-13T08:02:00Z"
+                },
+                {
+                    "enabled": true,
+                    "base": "EUR",
+                    "quote": "UAH",
+                    "buy": 43.90,
+                    "sell": 44.40,
+                    "updatedAt": "2024-06-17T08:02:00Z"
+                },
+                {
+                    "enabled": false,
+                    "base": "GBP",
+                    "quote": "UAH",
+                    "buy": 49.00,
+                    "sell": 52.50,
+                    "updatedAt": "2024-06-17T08:02:00Z"
+                },
+                {
+                    "enabled": true,
+                    "base": "CHF",
+                    "quote": "UAH",
+                    "buy": 43.00,
+                    "sell": 45.50,
+                    "updatedAt": "2024-06-17T08:02:00Z"
+                },
+                {
+                    "enabled": true,
+                    "base": "PLN",
+                    "quote": "UAH",
+                    "buy": 9.80,
+                    "sell": 10.50,
+                    "updatedAt": "2024-06-17T08:02:00Z"
+                },
+                {
+                    "enabled": true,
+                    "base": "EUR",
+                    "quote": "USD",
+                    "buy": 1.0681,
+                    "sell": 1.0936,
+                    "updatedAt": "2024-06-17T08:02:00Z"
+                }
+            ]
+        }
+    }
+}

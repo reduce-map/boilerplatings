@@ -1,0 +1,19 @@
+{
+    ".": {
+        "data": {
+            "username": "BossOfExchanges",
+            "companyName": "WeExchange",
+            "companyLogo": "https://kharkov.obmenka.ua/bundles/obmenkaapp/img/logo.svg",
+            "phone": "+380931111111",
+            "website": "https://weexchange.co",
+            "email": "weexchange@support.co",
+            "telegram": "https://t.me/WeExchange",
+            "whatsapp": "https://wa.me/380938151430",
+            "instagram": "https://www.instagram.com/weexchange.co/",
+            "facebook": "https://www.facebook.com/weexchange.co",
+            "identityDocument": "https://www.rvig.nl/sites/default/files/styles/large/public/2023-11/Kenmerkenbrochure%20identiteitskaart%20model%202021%20EN.jpg?itok=ma5WmVtw",
+            "companyDocument": "https://cdn.prod.website-files.com/5ebb0930dd82631397ddca92/61bb9a7943343e03bb9fcd1b_documents-product-template-software.png",
+            "wholesaleMinAmount": 500
+        }
+    }
+}
