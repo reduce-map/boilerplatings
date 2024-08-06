@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body,
+#app {
+  @apply h-full bg-white;
+  //@apply h-full bg-gray-900;
+}
+
+#headlessui-portal-root {
+  position: relative;
+  z-index: 100;
+}
