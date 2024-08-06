@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'cursorregular';
+    src: url('../fonts/cursor-webfont.eot');
+    src: url('../fonts/cursor-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cursor-webfont.woff') format('woff'),
+         url('../fonts/cursor-webfont.ttf') format('truetype'),
+         url('../fonts/cursor-webfont.svg#cursorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.font{
+    font-family: "cursorregular";
+    font-size: 50;
+}
