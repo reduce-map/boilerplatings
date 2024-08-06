@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "target": "es6",
+    "module": "CommonJS",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "outDir": "./build",
+    "rootDir": "source",
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "composite": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "typeRoots": ["@types","node_modules/@types"]
+  },
+  "include": ["source/**/*.ts"]
+}
