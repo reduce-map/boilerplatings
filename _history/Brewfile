@@ -1,0 +1,115 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "jeffreywildman/virt-manager"
+tap "johanhaleby/kubetail"
+tap "mistertea/et"
+tap "theseal/ssh-askpass"
+cask "xquartz"
+brew "gettext"
+brew "libcroco"
+brew "librsvg"
+brew "libyaml"
+brew "openssl"
+brew "ansible"
+brew "aws-elasticbeanstalk"
+brew "python"
+brew "awscli"
+brew "azure-cli"
+brew "bash"
+brew "bash-completion"
+brew "gnu-sed"
+brew "libevent"
+brew "popt"
+brew "s-lang"
+brew "newt"
+brew "tmux"
+brew "byobu"
+brew "certbot"
+brew "cfssl"
+brew "clamav"
+brew "jq"
+brew "redis"
+brew "conjure-up"
+brew "ctop"
+brew "erlang"
+brew "fish"
+brew "fzf"
+brew "git"
+brew "git-lfs"
+brew "gnupg", link: false
+brew "graphviz"
+brew "groovy"
+brew "htop"
+brew "iperf"
+brew "iperf3"
+brew "kubernetes-cli"
+brew "kops"
+brew "kubernetes-helm"
+brew "lftp"
+brew "lynx"
+brew "mas"
+brew "maven"
+brew "mtr"
+brew "mysql-client"
+brew "mysql-utilities"
+brew "mysql@5.7", restart_service: true
+brew "ncdu"
+brew "nmap"
+brew "node"
+brew "pstree"
+brew "qemu"
+brew "rabbitmq"
+brew "rbenv"
+brew "siege"
+brew "speedtest-cli"
+brew "sysbench"
+brew "telnet"
+brew "testdisk"
+brew "tig"
+brew "tree"
+brew "truncate"
+brew "utf8proc"
+brew "watch"
+brew "wget"
+brew "x11vnc"
+brew "zsh"
+brew "johanhaleby/kubetail/kubetail"
+brew "mistertea/et/et"
+brew "theseal/ssh-askpass/ssh-askpass"
+cask "font-source-code-pro"
+cask "font-ubuntu"
+cask "iina"
+cask "minikube"
+cask "real-vnc"
+cask "sqlpro-for-mysql"
+cask "squidman"
+mas "Amphetamine", id: 937984704
+mas "Apple Configurator 2", id: 1037126344
+mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Client Folder Maker", id: 456941247
+mas "CloudMounter", id: 1130254674
+mas "Copied", id: 1026349850
+mas "FLAC MP3 Converter", id: 982124349
+mas "FreeDiskSpace", id: 838744420
+mas "Hotspot Shield", id: 771076721
+mas "Jump Desktop", id: 524141863
+mas "KeyKey", id: 1035137927
+mas "Keynote", id: 409183694
+mas "Lightshot Screenshot", id: 526298438
+mas "Magnet", id: 441258766
+mas "Monity", id: 915542151
+mas "Numbers", id: 409203825
+mas "Outline", id: 1356178125
+mas "Pages", id: 409201541
+mas "PiPifier", id: 1160374471
+mas "Reeder", id: 880001334
+mas "Slack", id: 803453959
+mas "Speedtest", id: 1153157709
+mas "Telegram", id: 747648890
+mas "Telephone", id: 406825478
+mas "The Unarchiver", id: 425424353
+mas "Total Video Converter Pro", id: 426654691
+mas "Xcode", id: 497799835

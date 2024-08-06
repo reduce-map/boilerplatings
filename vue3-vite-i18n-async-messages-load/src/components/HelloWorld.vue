@@ -20,8 +20,14 @@ const vueRef = 'https://vuejs.org/'
   </select>
 
   <h1 class="green">{{ $t('title') }}</h1>
+
+  <p> with v-html: </p>
+
   <h3 v-html="$t('description', { viteRef: viteRef, vueRef: vueRef })"></h3>
-  <!--  <h3> {{ $t('description', { 'viteRef': viteRef, 'vueRef': vueRef}) }}</h3>-->
+
+  <p> without v-html (no links): </p>
+
+  <h3> {{ $t('description', { 'viteRef': viteRef, 'vueRef': vueRef}) }}</h3>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
