@@ -1,0 +1,18 @@
+.a-button-time-range {
+    padding: 14px 18px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px;
+
+    &:hover {
+        background: #2e2e2e;
+    }
+
+    &.active {
+        color: #1c1c1c;
+        background: #ffa800;
+    }
+}

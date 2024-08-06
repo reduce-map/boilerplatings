@@ -1,0 +1,19 @@
+@import 'sizes';
+
+$layer-negative-z-index: -1;
+$layer-page-z-index: 1;
+$layer-dropdown-z-index: 2;
+$layer-modal-z-index: 3;
+$layer-popover-z-index: 4;
+$layer-tooltip-z-index: 5;
+
+@mixin block {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1),
+        0 11px 6px -7px rgba(43, 43, 43, 0.1);
+    transition: all 0.3s ease-in-out;
+}

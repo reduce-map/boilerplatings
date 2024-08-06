@@ -1,0 +1,41 @@
+.a-button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 140px;
+    padding: 4px 24px;
+    font-size: 14px;
+    color: #ffa800;
+    background: none;
+    border: 1.5px solid #ffa800;
+    border-radius: 180px;
+
+    &:hover {
+        box-sizing: border-box;
+        background: rgba(255, 168, 0, 0.2);
+        border: 1.5px solid #ffa800;
+        border-radius: 180px;
+    }
+
+    &:active {
+        box-sizing: border-box;
+        color: #2e2e2e;
+        background: #ffa800;
+        border: 1.5px solid #ffa800;
+        border-radius: 180px;
+    }
+
+    &.yellow {
+        background: #ffa800;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &.large {
+        display: block;
+        width: 100%;
+        padding: 18px 0;
+        font-size: 18px;
+        color: #333;
+        text-transform: uppercase;
+    }
+}

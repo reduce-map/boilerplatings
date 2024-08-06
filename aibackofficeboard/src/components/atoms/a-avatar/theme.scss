@@ -1,0 +1,14 @@
+@import '@design';
+
+.a-avatar {
+    width: 42px;
+    height: 42px;
+    color: #1c1c1c;
+    background: #ff5151;
+    border-radius: 50%;
+
+    @include content-center();
+}
+.avatar-placeholder {
+    text-transform: uppercase;
+}

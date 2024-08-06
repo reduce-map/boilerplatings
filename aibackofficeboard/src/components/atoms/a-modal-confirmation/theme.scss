@@ -1,0 +1,55 @@
+@import '@design';
+
+.a-modal-confirmation {
+    .icon {
+        position: absolute;
+        top: -11px;
+        right: 10px;
+        font-size: 18px;
+        color: #ffa800;
+        cursor: pointer;
+    }
+
+    ::v-deep {
+        div.header {
+            display: none !important;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #fff;
+            text-transform: none;
+        }
+
+        p {
+            margin: 0 0 18px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #7b7b7b;
+        }
+
+        .modal-holder {
+            .holder {
+                padding: 19px 0 19px 18px;
+            }
+
+            .ps {
+                overflow: visible !important;
+            }
+        }
+    }
+}
+
+.btn-holder {
+    display: flex;
+    padding: 0 15px 0 18px;
+
+    .btn {
+        margin: 0 0 0 18px;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import '@design';
+
+.m-device-sidebar {
+    width: 300px;
+
+    li {
+        justify-content: space-between;
+        width: 300px;
+        height: 67px;
+        padding-right: 20px;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: pointer;
+        background: #161616;
+        border-radius: 5px;
+
+        @include content-center();
+
+        &.active {
+            background: linear-gradient(
+                270.47deg,
+                #78ffae -45.76%,
+                rgba(54, 115, 79, 0.3) 53.66%,
+                rgba(62, 132, 91, 0.385129) 107.25%,
+                #78ffae 219.61%
+            );
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

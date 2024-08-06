@@ -1,0 +1,12 @@
+.a-button-confirm {
+    width: 140px;
+    height: 50px;
+    text-transform: uppercase;
+    background: #78ffae;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        background: #31d773;
+    }
+}
