@@ -1,0 +1,45 @@
+Framerate task
+
+Framerate in North America is 29.97 frames per second (NTSC).
+Every second we show almost 30 frames. Every frame has its own label,
+E.g. first frame has label 00:00:00;00, second - 00:00:00;01 etc.
+
+But we show almost 30, not exactly 30 - thus occurs offset and we lose
+18 frame labels every 10 minutes (this is called dropframes).
+
+To justify this offset every minute (which is not divisable by 10) we drop first 2 frames.
+
+E.g. frame number 1799 (1 min * 60 secs * 30 frames - 1) has label
+00:00:59;29, and next one frame number 1800 has label 00:01:00;02.
+
+Task:
+You should write function `format`, which accepts a frame number and
+returns it in format `00:00:00;00` etc.
+
+You can write additional functions and so on. Do your best.
+
+/**
+ * @param frames number
+ * @return string
+ */
+function format (frameNumber) {
+    
+}
+
+Tests for this function could look like these:
+it('should format 0 to 00:00:00;00');
+it('should format 29 to 00:00:00;29');
+it('should format 30 to 00:00:01;00');
+it('should format 1799 to 00:00:59;29');
+it('should format 1800 to 00:01:00;02');
+it('should format 1801 to 00:01:00;03');
+it('should format 3597 to 00:01:59;29');
+it('should format 3598 to 00:02:00;02');
+it('should format 3598 to 00:02:00;02');
+it('should format 17981 to 00:09:59;29');
+it('should format 17982 to 00:10:00;00');
+it('should format 19781 to 00:10:59;29');
+it('should format 19782 to 00:11:00;02');
+
+You will have one hour only to do this task. It is okay if you not complete a task in time - just send us what you have after an hour. It is also okay to finish the task then and send the working code when you ready.
+Important: do not forget to send your code after one hour, otherwise we would not be able to accept it.
