@@ -53,8 +53,8 @@ const config = {
   connectionString: "mongodb://localhost:27017/steamAccount",
   removedProxiesFilePath: "./source/configuration/removedProxies.json",
   proxiesFilePath: "./source/configuration/socks5List.json",
-  telegramBotToken: "6788492901:AAFBEqQNJXZIgQTRgUicHGyH9yNFAY2Kt2M",
-  telegramChatId: "-4195510133",
+  telegramBotToken: "YOUR_BOT_TOKEN",
+  telegramChatId: "YOUR_CHAT_ID",
 };
 
 let cookieUpdateAwaiters: ((value?: any | PromiseLike<any>) => void)[] = [];
