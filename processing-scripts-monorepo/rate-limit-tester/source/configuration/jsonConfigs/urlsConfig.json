@@ -1,8 +1,0 @@
-
-{
-  "urls":[
-    { 
-        "url": "https://tradeit.gg/api/v2/inventory/data?gameId=730&offset=0&limit=&sortType=Popularity&searchValue=&minPrice=0&maxPrice=100000&minFloat=0&maxFloat=1&showTradeLock=true&colors=&showUserListing=true&fresh=true&isForStore=1"
-    }
-  ]
-}

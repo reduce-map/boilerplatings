@@ -1,1 +1,0 @@
-node checkSTE.js
